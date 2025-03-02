@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Board</title>
+
+    <!-- Necessary Links -->
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        .font-poppins {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-[#F4F7FF] font-poppins">
+    <!-- Header section -->
+    <header class="mx-24 p-5">
+        <nav>
+            <div class="navbar bg-base-100 p-5 rounded-2xl shadow-md">
+                <div class="flex-1">
+                    <div class="flex gap-2 items-end">
+                        <img class="w-11" src="./assets/logo.png" alt="">
+                        <p class="text-[#00303C] text-3xl">Dev<span class="font-bold">Board</span></p>
+                    </div>
+                </div>
+                <div id="previous">
+                    <a href="index.html">
+                        <button class="btn bg-[#3752FD] text-sm text-white mb-5 shadow-sm px-3 py-1 rounded-lg">Back to
+                            Desk</button>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main section -->
+    <Main class="mx-24">
+        <h1 class="text-center font-bold text-3xl m-5">Blogs</h1>
+        <div class="bg-white mb-5 shadow-sm rounded-xl p-5">
+            <h1 class="text-lg font-semibold">
+                Question-1: What are the different ways to select an element in the DOM?
+            </h1>
+            <hr class="my-6">
+            <p>getElementById, getElementByClassName, getElementByTagName, querySelector, querySelectorAll</p>
+        </div>
+        <div class="bg-white mb-5 shadow-sm rounded-xl p-5">
+            <h1 class="text-lg font-semibold">
+                Question-2: What is the difference between innerHTML, innerText, and textContent ?
+            </h1>
+            <hr class="my-6">
+            <p>innerHTML catches the HTML content in an element
+                innerText catches the Text content that is visible in am element but doesn't include any hidden text
+                textContent catches the text content both that is visible and hidden</p>
+        </div>
+        <div class="bg-white mb-5 shadow-sm rounded-xl p-5">
+            <h1 class="text-lg font-semibold">
+                Question-3: What is event delegation in the DOM?
+            </h1>
+            <hr class="my-6">
+            <p>Event delegation means when you set a event listener on the parent element to handle the events on the child elements.</p>
+        </div>
+        <div class="bg-white mb-5 shadow-sm rounded-xl p-5">
+            <h1 class="text-lg font-semibold">
+                Question-4: What is event bubbling in the DOM?
+            </h1>
+            <hr class="my-6">
+            <p>Events have a default behavior where if it is triggerd it strats from the target element and moves up or bubble up to the root of the DOM. This whole process is called event bubbling.</p>
+        </div>
+        <div class="bg-white mb-5 shadow-sm rounded-xl p-5">
+            <h1 class="text-lg font-semibold">
+                Question-5: How do you create, add, and remove elements using JavaScript?
+            </h1>
+            <hr class="my-6">
+            <p>To create an element we use document.createElement()
+                To add an element we use the appendChild()
+                To remove an element we use the .removeChild() or .remove()</p>
+        </div>
+        <br>
+    </Main>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
